@@ -22,3 +22,4 @@ function addValueToList() {
 
 	document.getElementById('my-Input').value = '';
 };
+addValueToList();
