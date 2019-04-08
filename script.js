@@ -12,7 +12,7 @@ function addValueToList() {
 	if (valueinput == '') {
 		return;
 	} else {
-		newLi.innerHTML = valueinput;
+		newLi.innerHTML = valueinput.charAt(0).toUpperCase() + valueinput.slice(1);
 		myul.appendChild(newLi);
 
 	}
