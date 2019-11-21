@@ -8,27 +8,31 @@
 </head>
 
 <body>
-	<h2>My Todo List</h2>
+	<main>
+		<section>
+			<h2>My Todo List</h2>
 
-	<form class="do-Input">
-		<input id="my-Input" placeholder="Que faire aujourd'hui?" type="text">
-		<button type="button" onclick="addValueToList()" class="addBtn">Ajouter</button>
-	</form>
+			<form class="do-Input">
+				<input id="my-Input" placeholder="Que faire aujourd'hui?" type="text">
+				<button type="button" onclick="addValueToList()" class="addBtn">Ajouter</button>
+			</form>
 
-	<ul id="myIL">
-		<li>
-			<p>Manger</p>
-			<a href="#" class="close"></a>
-		</li>
-		<li>
-			<p>Jouer</p>
-			<a href="#" class="close"></a>
-		</li>
-		<li>
-			<p>Dormir</p>
-			<a href="#" class="close"></a>
-		</li>
-	</ul>
+			<ul id="myIL">
+				<li>
+					<p>Manger</p>
+					<a href="#" class="close"></a>
+				</li>
+				<li>
+					<p>Jouer</p>
+					<a href="#" class="close"></a>
+				</li>
+				<li>
+					<p>Dormir</p>
+					<a href="#" class="close"></a>
+				</li>
+			</ul>
+		</section>
+	</main>
 
 	<script src="js/script.js"></script>
 </body>
