@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Todo List Nov 2019</title>
 </head>
+
 <body>
-	<h2>The input element</h2>
+	<h2>My Todo List</h2>
 
 	<form class="do-Input">
-	Enter your things:
-		<input id="my-Input" placeholder="fruits" type="text" >
-		<button type="button" onclick="addValueToList()" class="addBtn">Add</button>
+		<input id="my-Input" placeholder="Que faire aujourd'hui?" type="text">
+		<button type="button" onclick="addValueToList()" class="addBtn">Ajouter</button>
 	</form>
-	<br>
-	<br>
+
 	<ul id="myIL">
-		<li>Cherry</li>
-		<li>Apple</li>
-		<li>Orange</li>
+		<li>
+			<p>Manger</p>
+			<a href="#" class="close"></a>
+		</li>
+		<li>
+			<p>Jouer</p>
+			<a href="#" class="close"></a>
+		</li>
+		<li>
+			<p>Dormir</p>
+			<a href="#" class="close"></a>
+		</li>
 	</ul>
 
-	<script src="script.js">
-	</script>
+	<script src="js/script.js"></script>
 </body>
+
 </html>
