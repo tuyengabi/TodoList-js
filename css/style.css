@@ -92,14 +92,14 @@ li {
 }
 
 .todoItem {
-    width: 60%;
+    width: 74%;
 }
 
 .check {
     display: block;
     position: relative;
     padding-left: 60px;
-    cursor: pointer;    
+    cursor: pointer;
     font-family: 'Codystar', cursive;
     font-size: 2.2rem;
     top: 7px;
@@ -123,7 +123,7 @@ li {
     left: 0;
     height: 46px;
     width: 46px;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .check:hover {
@@ -188,7 +188,7 @@ li {
     content: ' ';
     height: 50px;
     width: 5px;
-    background-color: #fff;
+    background-color: rgb(147, 36, 250);
     transform: rotate(90deg);
     transition: all 0.25s ease-out;
 }
@@ -208,6 +208,20 @@ li {
     ul {
         margin-top: 40px;
         font-size: 2.4rem;
+    }
+    .check {
+        padding-left: 50px;
+        font-size: 2rem;
+    }
+    .checkmark {
+        top: 0;
+        left: 0;
+        height: 42px;
+        width: 42px;
+    }
+    .check .checkmark:after {
+        width: 14px;
+        height: 34px;
     }
     .close {
         width: 44px;
@@ -239,6 +253,21 @@ li {
     ul {
         margin-top: 30px;
         font-size: 2.2rem;
+    }
+    .check {
+        top: 10px;
+        padding-left: 46px;
+        font-size: 1.6rem;
+    }
+    .checkmark {
+        top: -3px;
+        left: 0;
+        height: 38px;
+        width: 38px;
+    }
+    .check .checkmark:after {
+        width: 10px;
+        height: 32px;
     }
     .close {
         width: 40px;
