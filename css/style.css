@@ -91,6 +91,75 @@ li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
+.todoItem {
+    width: 60%;
+}
+
+.check {
+    display: block;
+    position: relative;
+    padding-left: 60px;
+    cursor: pointer;    
+    font-family: 'Codystar', cursive;
+    font-size: 2.2rem;
+    top: 7px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 46px;
+    width: 46px;
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.check:hover {
+    color: rgb(70, 135, 255);
+}
+
+.check:hover input~.checkmark {
+    background-color: rgba(0, 0, 128, 0.7);
+}
+
+.check input:checked~.checkmark {
+    background-color: rgb(147, 36, 250);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check input:checked~.checkmark:after {
+    display: block;
+}
+
+.check .checkmark:after {
+    left: 12px;
+    top: 0px;
+    width: 17px;
+    height: 35px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 .close {
     display: inline-block;
     width: 50px;
@@ -124,7 +193,6 @@ li {
     transition: all 0.25s ease-out;
 }
 
-
 /* Media query for screen 1600x900 */
 
 @media screen and (max-width: 1600px) and (min-width: 1367px) {
@@ -154,7 +222,6 @@ li {
         height: 46px;
     }
 }
-
 
 /* Media query for screen 1366x768 */
 
