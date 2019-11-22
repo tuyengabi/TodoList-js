@@ -7,6 +7,7 @@ body {
     /* linear-gradient (rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), */
     background: linear-gradient(rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), url('../imgs/city.jpg') no-repeat center center fixed;
     background-size: cover;
+    background-position: 20% 50%;
     height: 100vh;
 }
 
@@ -194,8 +195,7 @@ li {
 }
 
 /* Media query for screen 1600x900 */
-
-@media screen and (max-width: 1600px) and (min-width: 1367px) {
+@media screen and (max-width: 1820px) and (min-width: 1601px) {
     h2 {
         margin-top: 10px;
     }
@@ -224,6 +224,7 @@ li {
         height: 34px;
     }
     .close {
+        padding-top: 3px;
         width: 44px;
         height: 46px;
     }
@@ -237,8 +238,53 @@ li {
     }
 }
 
-/* Media query for screen 1366x768 */
+/* Media query for screen 1440x900 */
+@media screen and (max-width: 1600px) and (min-width: 1367px) {
+    h2 {
+        margin-top: 10px;
+    }
+    input[type=text] {
+        font-size: 1.8rem;
+    }
+    button[type=button] {
+        font-size: 1.8rem;
+    }
+    ul {
+        margin-top: 40px;
+        font-size: 2.4rem;
+    }
+    .check {
+        top: 11px;
+        padding-left: 50px;
+        font-size: 1.8rem;
+    }
+    .checkmark {
+        top: -4px;
+        left: 0;
+        height: 42px;
+        width: 42px;
+    }
+    .check .checkmark:after {
+        width: 14px;
+        height: 34px;
+    }
+    .close {
+        padding-top: 3px;
+        width: 44px;
+        height: 46px;
+    }
+    .close:before, .close:after {
+        right: 20.8vw;
+        height: 46px;
+    }
+    .close:hover:before, .close:hover:after {
+        right: 20.8vw;
+        height: 46px;
+    }
+}
 
+
+/* Media query for screen 1366x768 */
 @media screen and (max-width: 1366px) and (min-width: 900px) {
     h2 {
         font-size: 3.6rem;
@@ -270,6 +316,7 @@ li {
         height: 32px;
     }
     .close {
+        padding-top: 5px;
         width: 40px;
         height: 40px;
     }
