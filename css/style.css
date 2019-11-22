@@ -36,7 +36,7 @@ h2 {
     margin-top: 20px;
     font-family: 'Codystar', cursive;
     font-size: 4rem;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
 }
 
 form {
@@ -50,7 +50,7 @@ form {
 input[type=text] {
     background-color: rgba(0, 0, 0, 0.602);
     color: #fff;
-    width:80%;
+    width: 80%;
     height: 50px;
     text-align: center;
     font-size: 2rem;
@@ -88,12 +88,10 @@ ul {
 
 li {
     display: flex;
-    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-
-
-/* .close {
+.close {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -102,11 +100,11 @@ li {
 
 .close:before, .close:after {
     position: absolute;
-    left: 100px;
+    right: 20vw;
     content: ' ';
     height: 50px;
     width: 5px;
-    background-color: #333;
+    background-color: #fff;
     transform: rotate(-45deg);
     transition: all 0.25s ease-out;
 }
@@ -117,11 +115,74 @@ li {
 
 .close:hover:before, .close:hover:after {
     position: absolute;
-    left: 100px;
+    right: 20vw;
     content: ' ';
     height: 50px;
     width: 5px;
-    background-color: #333;
+    background-color: #fff;
     transform: rotate(90deg);
     transition: all 0.25s ease-out;
-} */
+}
+
+
+/* Media query for screen 1600x900 */
+
+@media screen and (max-width: 1600px) and (min-width: 1367px) {
+    h2 {
+        margin-top: 10px;
+    }
+    input[type=text] {
+        font-size: 1.8rem;
+    }
+    button[type=button] {
+        font-size: 1.8rem;
+    }
+    ul {
+        margin-top: 40px;
+        font-size: 2.4rem;
+    }
+    .close {
+        width: 44px;
+        height: 46px;
+    }
+    .close:before, .close:after {
+        right: 20.8vw;
+        height: 46px;
+    }
+    .close:hover:before, .close:hover:after {
+        right: 20.8vw;
+        height: 46px;
+    }
+}
+
+
+/* Media query for screen 1366x768 */
+
+@media screen and (max-width: 1366px) and (min-width: 900px) {
+    h2 {
+        font-size: 3.6rem;
+        margin-top: 10px;
+    }
+    input[type=text] {
+        font-size: 1.6rem;
+    }
+    button[type=button] {
+        font-size: 1.6rem;
+    }
+    ul {
+        margin-top: 30px;
+        font-size: 2.2rem;
+    }
+    .close {
+        width: 40px;
+        height: 40px;
+    }
+    .close:before, .close:after {
+        right: 21.2vw;
+        height: 40px;
+    }
+    .close:hover:before, .close:hover:after {
+        right: 21.2vw;
+        height: 40px;
+    }
+}
