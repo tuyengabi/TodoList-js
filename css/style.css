@@ -348,6 +348,7 @@ li {
     }
 }
 
+/* Media query for screen tablette */
 @media screen and (max-width: 1024px) and (min-width: 901px) {
     main {
         position: absolute;

@@ -33,9 +33,9 @@ function addValueToList() {
 		newLabel.classList.add('check');
 		//je créer l'input du label
 		let newLblInput = document.createElement('input');
-		//on force le type checkbox et checked
+		//on force le type checkbox
 		newLblInput.setAttribute('type','checkbox');
-		newLblInput.setAttribute('checked','checked');
+		//on force checked newLblInput.setAttribute('checked','checked');
 		//je créer le span du label
 		let newLblSpan = document.createElement('span');
 		//on ajoute la classe checkmark
