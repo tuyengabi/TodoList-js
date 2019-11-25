@@ -44,8 +44,8 @@ function addValueToList() {
 		let newLblP = document.createElement('p');
 		//j'ajoute la classe status
 		newLblP.classList.add('status');
-		//j'aoute le texte c'est fait
-		newLblP.innerText="c'est fait";
+		//j'ajoute le texte c'est fait
+		newLblP.innerText="done";
 
 		//j'assemble le label
 		newLabel.appendChild(newLblInput);
