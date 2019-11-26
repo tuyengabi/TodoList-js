@@ -5,9 +5,9 @@
 
 body {
     /* linear-gradient (rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), */
-    background: linear-gradient(rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), url('../imgs/city.jpg') no-repeat center center fixed;
+    background: url('../imgs/3.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: 20% 50%;
+    background-position: 90% 50%;
     height: 100vh;
     display: flex;
 }
@@ -26,7 +26,7 @@ main {
 section {
     box-sizing: border-box;
     border-radius: 5px;
-    background: linear-gradient( rgb(255, 69, 0, 0.2), rgba(47, 3, 190, 0.2));
+    background: linear-gradient( rgba(255, 123, 0, 0.7), rgba(47, 3, 190, 0.7));
     padding: 20px;
     width: 100%;
     height: 100%;

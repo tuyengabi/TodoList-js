@@ -14,11 +14,11 @@ function addValueToList() {
 	let valueInput = document.getElementById('my-Input').value;
 	console.log(valueInput);
 
+
+
 	if (valueInput == '') {
 		return;
 	} else {
-
-		
 
 		//je créer et rempli la balise p du li
 		let newP = document.createElement('p');
@@ -34,7 +34,7 @@ function addValueToList() {
 		//je créer l'input du label
 		let newLblInput = document.createElement('input');
 		//on force le type checkbox
-		newLblInput.setAttribute('type','checkbox');
+		newLblInput.setAttribute('type', 'checkbox');
 		//on force checked newLblInput.setAttribute('checked','checked');
 		//je créer le span du label
 		let newLblSpan = document.createElement('span');
@@ -45,7 +45,7 @@ function addValueToList() {
 		//j'ajoute la classe status
 		newLblP.classList.add('status');
 		//j'ajoute le texte c'est fait
-		newLblP.innerText="done";
+		newLblP.innerText = "done";
 
 		//j'assemble le label
 		newLabel.appendChild(newLblInput);
@@ -54,7 +54,7 @@ function addValueToList() {
 
 		//je créer le a du li
 		let newA = document.createElement('a');
-		newA.setAttribute('href','#');
+		newA.setAttribute('href', '#');
 		newA.classList.add('close');
 
 		//j'assemble le contenu du li
@@ -65,11 +65,13 @@ function addValueToList() {
 		// newTask.innerHTML = valueInput.charAt(0).toUpperCase() + valueInput.slice(1);
 		myList.appendChild(newTask);
 
-	}
 
+
+	}
 
 document.getElementById('my-Input').value = '';
 
-
 };
+
+
 addValueToList();

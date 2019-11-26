@@ -6,14 +6,24 @@
 	<link href="https://fonts.googleapis.com/css?family=Codystar&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/light.css">
+
 
 	<title>Todo List Nov 2019</title>
 </head>
 
 <body>
+
 	<main>
 		<section>
-			<h2>My Todo List</h2>
+			<div class='toggle' id='switch'>
+				<div class='toggle-text-off'>OFF</div>
+				<div class='glow-comp'></div>
+				<div class='toggle-button'></div>
+				<div class='toggle-text-on'>ON</div>
+			</div>
+			<h2>Todo List</h2>
+			<img src="" alt="">
 
 			<form class="do-Input">
 				<input id="my-Input" placeholder="What need i do today?" type="text">
@@ -52,8 +62,11 @@
 		</section>
 	</main>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	<script src="js/light.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/checkbox.js"></script>
+
+
 </body>
 
 </html>
