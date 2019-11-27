@@ -1,5 +1,12 @@
+// add event switch light
+function toggleDarkLight() {
+	var template = document.getElementById("template");
+	var currentClass = template.className;
+	template.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+};
 
 
+// function add newTask
 function addValueToList() {
 
 	//je récupere ma liste
@@ -69,7 +76,7 @@ function addValueToList() {
 
 	}
 
-document.getElementById('my-Input').value = '';
+	document.getElementById('my-Input').value = '';
 
 };
 
