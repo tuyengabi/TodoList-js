@@ -1,8 +1,19 @@
 // add event switch light
-function toggleDarkLight() {
-	var template = document.getElementById("template");
-	var currentClass = template.className;
-	template.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+function toggleColor() {
+	var gradient = document.getElementById("gradient");
+	var currentClass = gradient.className;
+	gradient.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+};
+
+function toggleBgImg() {
+	var background = document.getElementById("bg");
+	var currentClass = background.className;
+	background.className = currentClass == "d-mode" ? "l-mode" : "d-mode";
+};
+
+function toggleThemplate() {
+	toggleBgImg();
+	toggleColor();
 };
 
 

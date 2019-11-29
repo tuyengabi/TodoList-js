@@ -3,11 +3,20 @@
     margin: 0;
 }
 
-body {
+body.l-mode {
     /* linear-gradient (rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), */
     background: url('../imgs/3.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: 90% 50%;
+    height: 100vh;
+    display: flex;
+}
+
+body.d-mode {
+    /* linear-gradient (rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), */
+    background: linear-gradient(rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), url("../imgs/city.jpg");
+    background-size: cover;
+    background-position: 50% 30%;
     height: 100vh;
     display: flex;
 }
@@ -22,7 +31,6 @@ main {
     height: 90vh;
     border-radius: 5px;
 }
-
 
 section.light-mode {
     box-sizing: border-box;
@@ -363,6 +371,7 @@ li {
 }
 
 /* Media query for screen tablette */
+
 @media screen and (max-width: 1024px) and (min-width: 901px) {
     main {
         position: absolute;

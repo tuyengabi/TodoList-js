@@ -7,7 +7,7 @@
 
 .toggle{
     position: absolute;
-    border: 2px solid rgb(211, 123, 164);
+    border: 2px solid rgba(252, 160, 255, 0.8);
     border-radius: 20px;
     -webkit-transition: border-color .6s  ease-out;
     transition: border-color .6s  ease-out;
@@ -26,7 +26,7 @@
     width: 28px;
     bottom: 4px;
     right: 39px;
-    background-color: rgb(211, 123, 164);
+    background-color: rgba(252, 160, 255, 0.8);
     border-radius: 19px; 
     cursor: pointer;
     -webkit-transition: all .3s .1s, width .1s, top .1s, bottom .1s;
@@ -88,11 +88,11 @@
 
     cursor: pointer;
 
-    color: rgb(211, 123, 164);
+    color: rgba(252, 160, 255, 0.8);
 }
 
 .toggle-on .toggle-text-off{
-    color: rgb(147, 36, 250);
+    color: rgb(253, 170, 232);
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1367px) {
