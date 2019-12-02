@@ -2,13 +2,13 @@
 function toggleColor() {
 	var gradient = document.getElementById("gradient");
 	var currentClass = gradient.className;
-	gradient.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+	gradient.className = currentClass == "gradient--darkmode" ? "gradient--lightmode" : "gradient--darkmode";
 };
 
 function toggleBgImg() {
 	var background = document.getElementById("bg");
 	var currentClass = background.className;
-	background.className = currentClass == "d-mode" ? "l-mode" : "d-mode";
+	background.className = currentClass == "bg--darkmode" ? "bg--lightmode" : "bg--darkmode";
 };
 
 function toggleThemplate() {

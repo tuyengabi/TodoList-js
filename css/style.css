@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-body.l-mode {
+body.bg--lightmode {
     /* linear-gradient (rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), */
     background: url('../imgs/3.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -12,7 +12,7 @@ body.l-mode {
     display: flex;
 }
 
-body.d-mode {
+body.bg--darkmode {
     /* linear-gradient (rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), */
     background: linear-gradient(rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), url("../imgs/city.jpg");
     background-size: cover;
@@ -32,7 +32,7 @@ main {
     border-radius: 5px;
 }
 
-section.light-mode {
+section.gradient--lightmode {
     box-sizing: border-box;
     border-radius: 5px;
     background: linear-gradient( rgba(219, 76, 33, 0.7), rgba(47, 3, 190, 0.7));
@@ -43,7 +43,7 @@ section.light-mode {
     text-align: center;
 }
 
-section.dark-mode {
+section.gradient--darkmode {
     box-sizing: border-box;
     border-radius: 5px;
     background: linear-gradient( rgba(0, 195, 255, 0.2), rgba(252, 1, 105, 0.2));
