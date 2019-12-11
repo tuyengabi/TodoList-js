@@ -14,7 +14,7 @@ body.bg--lightmode {
 
 body.bg--darkmode {
     /* linear-gradient (rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), */
-    background: linear-gradient(rgba(0, 0, 128, 0.5), rgba(255, 0, 200, 0.2)), url("../imgs/city.jpg");
+    background: linear-gradient(rgba(255, 0, 200, 0.3), rgba(0, 0, 128, 0.5)), url("../imgs/city.jpg");
     background-size: cover;
     background-position: 50% 30%;
     height: 100vh;
@@ -108,6 +108,8 @@ ul {
     font-size: 2.6rem;
     font-family: 'Rajdhani', sans-serif;
     margin-top: 50px;
+    /* overflow: scroll;
+    height: 300px; */
 }
 
 li {
