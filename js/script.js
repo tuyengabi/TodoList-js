@@ -22,15 +22,15 @@ function addValueToList() {
 
 	//je récupere ma liste
 	let myList = document.getElementsByTagName('ul')[0];
-	console.log(myList);
+	// console.log(myList);
 
 	//je récupere ma item of la liste 
 	let newTask = document.createElement('li');
-	console.log(newTask);
+	// console.log(newTask);
 
 	//je récupere la valeur d'input
 	let valueInput = document.getElementById('my-Input').value;
-	console.log(valueInput);
+	// console.log(valueInput);
 
 
 
@@ -74,6 +74,10 @@ function addValueToList() {
 		let newA = document.createElement('a');
 		newA.setAttribute('href', '#');
 		newA.classList.add('close');
+		newA.addEventListener('click',function(){
+			this.parentElement.remove();
+		});
+
 
 		//j'assemble le contenu du li
 		newTask.appendChild(newP);
@@ -83,13 +87,24 @@ function addValueToList() {
 		// newTask.innerHTML = valueInput.charAt(0).toUpperCase() + valueInput.slice(1);
 		myList.appendChild(newTask);
 
-
-
 	}
 
 	document.getElementById('my-Input').value = '';
 
 };
 
-
 addValueToList();
+
+document.querySelectorAll('.close').forEach(element => {
+	element.addEventListener('click',function(){
+		this.parentElement.remove();
+	});
+});
+
+
+$(document).keypress(function(e){
+	if (e.key === 'Enter'){
+		e.preventDefault();
+		addValueToList();
+    }
+});
