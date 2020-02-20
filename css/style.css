@@ -451,11 +451,11 @@ li {
         top: -56px;
         left: 0;
         right: 0;
-        font-size: 3rem;
+        font-size: 4.2rem;
         margin-top: 10px;
     }
     form {
-        margin-top: -16px;
+        margin-top: 0px;
     }
     input[type=text] {
         font-size: 1.2rem;
