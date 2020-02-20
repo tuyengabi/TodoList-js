@@ -383,21 +383,23 @@ li {
     }
     h2 {
         position: absolute;
-        top: -56px;
+        top: -150px;
         left: 0;
         right: 0;
-        font-size: 3rem;
+        font-size: 100px;
         margin-top: 10px;
     }
     form {
         margin-top: 2px;
     }
     input[type=text] {
-        font-size: 1.2rem;
+        font-size: 4rem;
+        height: 100px;
     }
     button[type=button] {
         background-color: rgb(147, 36, 250);
-        font-size: 1.2rem;
+        font-size: 4rem;
+        height: 100px;
     }
     ul {
         margin-top: 30px;
@@ -448,21 +450,21 @@ li {
     }
     h2 {
         position: absolute;
-        top: -56px;
+        top: -150px;
         left: 0;
         right: 0;
-        font-size: 4.2rem;
+        font-size: 9rem;
         margin-top: 10px;
     }
     form {
         margin-top: 0px;
     }
     input[type=text] {
-        font-size: 1.2rem;
+        font-size: 4rem;
     }
     button[type=button] {
         background-color: rgb(147, 36, 250);
-        font-size: 1.2rem;
+        font-size: 4rem;
     }
     ul {
         margin-top: 30px;
